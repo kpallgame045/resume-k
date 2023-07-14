@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyur Oil Box Online Order</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #order {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+    }
+
+    #product {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #product img {
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Keyur Oil Box Online Order</h1>
+  </header>
+
+  <section id="order">
+    <h2>Place an Order</h2>
+    <form action="/submit-order" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="address">Home Address:</label>
+      <textarea id="address" name="address" rows="3" cols="30" required></textarea><br><br>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+      <label for="payment">Online Payment:</label>
+      <input type="checkbox" id="payment" name="payment" required><br><br>
+
+      <input type="submit" value="Place Order">
+    </form>
+  </section>
+
+  <section id="product">
+    <h2>Oil Box</h2>
+    <img src="oil-box.jpg" alt="Oil Box Image">
+    <p>Price: $4500</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Keyur Oil Box Online Order. All rights reserved.</p>
+  </footer>
+</body>
+</html>
